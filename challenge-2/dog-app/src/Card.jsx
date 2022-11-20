@@ -24,7 +24,7 @@ function Card() {
 
             <div className="card">
               <Image dog={key} subBreeds={value} />
-              <p>{key}</p>
+              <p class="breed">{key}</p>
             </div>
 
         ))}

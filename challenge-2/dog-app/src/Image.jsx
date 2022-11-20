@@ -19,7 +19,7 @@ const Image = ({dog, subBreeds}) => {
       });
   }, setDogImage);
 
-  const listSubBreeds = subBreeds.slice(0, 3).map(element => <li>{element}</li>);
+  const listSubBreeds = subBreeds.length !== 0 ? subBreeds.slice(0, 3).map(element => <li class="list">{element}</li>) : <p>no sub-breed</p>;
 
   return (
     <div className="container-img">

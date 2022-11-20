@@ -1,21 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;0,900;1,700&display=swap');
 
+.breed {
+  margin: 7px;
+  font-size: 18px;
+}
 .container-card{
   display: flex;
   justify-content: center;
+
 }
 .card{
   border: 1px solid;
   border-radius: 10px;
   width:250px;
   margin: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
+
+
 .card-collection{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
 }
-p{
+p, li{
   font-family: 'Montserrat', sans-serif;
 }
 

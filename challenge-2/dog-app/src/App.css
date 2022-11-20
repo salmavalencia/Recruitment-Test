@@ -1,9 +1,12 @@
+
+*{margin:0; padding:0;}
 .container {
   justify-content: center;
-  
+
 
 }
 .App {
   text-align: center;
   justify-content: center;
+  background-color: #E4E4E4;
 }

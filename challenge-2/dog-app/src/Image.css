@@ -3,12 +3,18 @@ img {
     height: 250px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    cursor: pointer;
 }
+
+ul {
+  list-style-type: none;
+  cursor: pointer;
+}
+
 
 .container-img {
   position: relative;
   text-align: left;
-  color: black;
 }
 
 .top-left {
@@ -19,4 +25,5 @@ img {
   opacity: 0.8;
   color: white;
   border-radius: 5px;
+  padding: 8px;
 }
