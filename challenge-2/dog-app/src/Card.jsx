@@ -23,7 +23,7 @@ function Card() {
         {Object.entries(dog).map(([key, value]) => (
 
             <div className="card">
-              <Image dog={key}/>
+              <Image dog={key} subBreeds={value} />
               <p>{key}</p>
             </div>
 

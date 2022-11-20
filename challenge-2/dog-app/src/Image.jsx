@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import "./Image.css"
 
-const Image = ({dog}) => {
+const Image = ({dog, subBreeds}) => {
   const [dogImage, setDogImage] = useState('');
+  const [isHover, setIsHover] = useState(false);
 
   const urlImage = "https://dog.ceo/api/breed/" + dog + "/images/random";
   useEffect(() => {
@@ -18,13 +19,29 @@ const Image = ({dog}) => {
       });
   }, setDogImage);
 
+  const listSubBreeds = subBreeds.slice(0, 3).map(element => <li>{element}</li>);
 
   return (
-    <div>
+    <div className="container-img">
 
-      <img src={dogImage} alt="dog"/>
+      <img src={dogImage} alt="dog" onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)} />
+
+
+        {isHover && (
+
+          <ul className="top-left" onMouseEnter={() => setIsHover(true)}>
+
+              {listSubBreeds}
+
+          </ul>
+        )}
     </div>
   )
 }
 
 export default Image;
+// {
+//   subBreeds.map(element => {
+//     <div>{element}</div>
+//   })
+// }
