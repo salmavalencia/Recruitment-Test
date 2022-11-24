@@ -1,0 +1,40 @@
+
+nav {
+    background-color: #E1E1E1;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.2);
+}
+.login-register-title{
+    margin: 50px;
+    margin-bottom: 20px;
+}
+.btn{
+    margin: 20px;
+    width: 120px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+body{
+    background-color: #ECECEC;
+}
+.login-register{
+    text-align: center;
+}
+.logo {
+    width: 280px;
+    height: auto;
+    margin: 20px;
+}
+.btn-google {
+    text-align: left;
+    width: 97%;
+}
+
+.product-grid {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px 30px;
+}
+
+
